@@ -1,6 +1,9 @@
 *
 {
   scroll-behavior: smooth;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
 }
 .App {
   text-align: center;
@@ -44,4 +47,6 @@
 {
   position: fixed;
   width: 100%;
+ 
+  top: 0%;
 }
