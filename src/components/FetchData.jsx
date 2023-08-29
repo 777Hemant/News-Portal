@@ -33,7 +33,7 @@ const FetchData = ({ cat }) => {
           <div className='spinner-border' role='status'>
             <span className='visually-hidden'>Loading...</span>
           </div>
-        ) : data.length > 0 ? (
+        ) : data?.length > 0 ? (
           data.map((item, index) => (
             <div
               key={index}
@@ -43,7 +43,7 @@ const FetchData = ({ cat }) => {
               <h5 className='my-2'>{item.title}</h5>
               <div className='d-flex justify-content-center align-items-center'>
                 <img
-                  src={item.urlToImage || ''}
+                  src={item?.urlToImage || ''}
                   alt={item.title}
                   className='img-fluid'
                   style={{ width: '100%', height: '300px', objectFit: 'cover' }}
