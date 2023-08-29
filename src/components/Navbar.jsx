@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
-    <div>
+    <div className='hemant'>
       <nav className="navbar navbar-expand-lg bg-dark">
         <div className="container-fluid">
           <Link className="navbar-brand text-white" to="/">News Portal</Link>
